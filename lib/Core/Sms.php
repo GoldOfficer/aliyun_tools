@@ -19,9 +19,10 @@ class Sms
 {
     static $acsClient = null;
     
-    public function __construct()
+    public function __construct($config = [])
     {
         static::loadConfig();
+        self::getAcsClient($config);
     }
     
     private static function loadConfig()
