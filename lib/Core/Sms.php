@@ -37,7 +37,7 @@ class Sms
         $accessKeyId     = $config['AccessKeyId']; // AccessKeyId
         $accessKeySecret = $config['AccessKeySecret']; // AccessKeySecret
         $region          = $config['region'];
-        $endPointName    = $config['endPointName '];
+        $endPointName    = $config['endPointName'];
         
         if (static::$acsClient == null) {
             $profile = DefaultProfile::getProfile($region, $accessKeyId, $accessKeySecret);
@@ -48,13 +48,13 @@ class Sms
         return static::$acsClient;
     }
     
-    public static function sendSms($phoneNumber,
-                                   $templateParam = [],
-                                   $templateCode = '',
-                                   $smsSign = '',
-                                   $https = true,
-                                   $outId = 'yourOutId',
-                                   $smsUpExtendCode = '1234567')
+    public function sendSms($phoneNumber,
+                            $templateParam = [],
+                            $templateCode = '',
+                            $smsSign = '',
+                            $https = true,
+                            $outId = 'yourOutId',
+                            $smsUpExtendCode = '1234567')
     {
         
         $request = new SendSmsRequest();
@@ -78,12 +78,12 @@ class Sms
         return $acsResponse;
     }
     
-    public static function sendBatchSms($phoneNumbers = [],
-                                        $templateParam = [],
-                                        $templateCode = '',
-                                        $smsSign = [],
-                                        $https = true,
-                                        $smsUpExtendCode = [])
+    public function sendBatchSms($phoneNumbers = [],
+                                 $templateParam = [],
+                                 $templateCode = '',
+                                 $smsSign = [],
+                                 $https = true,
+                                 $smsUpExtendCode = [])
     {
         $request = new SendBatchSmsRequest();
         
@@ -120,12 +120,12 @@ class Sms
         return $acsResponse;
     }
     
-    public static function querySendDetails($phoneNumber,
-                                            $date = '',
-                                            $currentPage = 1,
-                                            $pageSize = '10',
-                                            $https = true,
-                                            $bizId = 'yourBizId')
+    public function querySendDetails($phoneNumber,
+                                     $date = '',
+                                     $currentPage = 1,
+                                     $pageSize = '10',
+                                     $https = true,
+                                     $bizId = 'yourBizId')
     {
         $request = new QuerySendDetailsRequest();
         
