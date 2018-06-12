@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "70e233e0fbf4f6dd8d933a5a3ca95cab",
-    "content-hash": "6947cbd9d384882a332088bf84c88ef9",
+    "hash": "3c5fc95256aa3c2bc49654b05d987b65",
+    "content-hash": "273de3a51575ce6c7de98f86df9c78e1",
     "packages": [
         {
             "name": "myok/aliyun-dysms-php-sdk",
@@ -32,6 +32,32 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "time": "2018-06-12 06:27:18"
+        },
+        {
+            "name": "myok/aliyun-oss-sts",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyOK/AliYunOssSts.git",
+                "reference": "494790971a8abefc4fb4beab8753d36385e7f674"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MyOK/AliYunOssSts/zipball/494790971a8abefc4fb4beab8753d36385e7f674",
+                "reference": "494790971a8abefc4fb4beab8753d36385e7f674",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyOK\\OssSts\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-06-12 09:26:10"
         }
     ],
     "packages-dev": [],
