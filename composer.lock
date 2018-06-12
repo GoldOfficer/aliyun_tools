@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c996da9339e945df27e06fb1f12a1a1",
-    "content-hash": "4f85d57b6c25c58d73ab9a264df66db0",
+    "hash": "8e514871b2d2c128633bab3fdbd299b8",
+    "content-hash": "7b96d113ef6750c6455d8fdeda1d748b",
     "packages": [
         {
             "name": "aliyuncs/aliyun-dysms-php-sdk",
-            "version": "dev-master",
+            "version": "v1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MyOK/AliYunSms.git",
@@ -50,9 +50,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "aliyuncs/aliyun-dysms-php-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
