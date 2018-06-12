@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "2c996da9339e945df27e06fb1f12a1a1",
+    "content-hash": "4f85d57b6c25c58d73ab9a264df66db0",
+    "packages": [
+        {
+            "name": "aliyuncs/aliyun-dysms-php-sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyOK/AliYunSms.git",
+                "reference": "9445f450fb37b77559b6f21f582906f3ccf414bc"
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aliyun\\": "lib/",
+                    "Aliyun\\Test\\": "tests/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Aliyuncs",
+                    "homepage": "https://www.aliyun.com"
+                }
+            ],
+            "description": "Aliyun SMS SDK for PHP",
+            "homepage": "https://www.aliyun.com/product/sms",
+            "keywords": [
+                "SMS",
+                "aliyun",
+                "sdk"
+            ],
+            "time": "2018-06-12 02:39:05"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "aliyuncs/aliyun-dysms-php-sdk": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.5.0"
+    },
+    "platform-dev": []
+}
