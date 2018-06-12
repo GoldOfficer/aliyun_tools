@@ -1,8 +1,9 @@
 {
-    "name": "myok/aliyun_tools",
-    "description": "Aliyun Tools",
-    "type": "library",
-    "authors": [
+    "name"        : "myok/aliyun_tools",
+    "description" : "Aliyun Tools",
+    "type"        : "library",
+    "license"     : "MIT",
+    "authors"     : [
         {
             "name" : "Baihuzi",
             "email": "baihuzi8@gmail.com"
@@ -14,11 +15,11 @@
             "url" : "https://github.com/MyOK/AliYunSms.git"
         }
     ],
-    "require": {
-        "php": ">=5.5.0",
-        "aliyuncs/aliyun-dysms-php-sdk":"dev-master"
+    "require"     : {
+        "php"                          : ">=5.5.0",
+        "aliyuncs/aliyun-dysms-php-sdk": "1.0"
     },
-    "autoload": {
+    "autoload"    : {
         "psr-4": {
             "MyOK\\AliyunTools\\": "lib/"
         }
