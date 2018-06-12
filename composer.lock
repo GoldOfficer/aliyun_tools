@@ -4,47 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6a4d623aa4e81f5d58ad3debd73c9d0b",
-    "content-hash": "a5c73424af9e6d158835af10990e2668",
+    "hash": "71da33abf8da4596ef90470b82d32f42",
+    "content-hash": "2e517da295922b7a5d28596ee7e71c4f",
     "packages": [
         {
-            "name": "aliyuncs/aliyun-dysms-php-sdk",
-            "version": "v2.0",
+            "name": "myok/aliyun-dysms-php-sdk",
+            "version": "v3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MyOK/AliYunSms.git",
-                "reference": "0d6d382c6fd0582436ed4dc1fa0368f54851cc55"
+                "reference": "56f756dd6b683244c4bce4de456a60223dc221b1"
             },
             "require": {
                 "php": ">=5.5.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Aliyun\\": "lib/",
-                    "Aliyun\\Test\\": "tests/"
+                    "Aliyun\\": "lib/"
                 }
             },
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Aliyuncs",
-                    "homepage": "https://www.aliyun.com"
-                }
-            ],
-            "description": "Aliyun SMS SDK for PHP",
-            "homepage": "https://www.aliyun.com/product/sms",
-            "keywords": [
-                "SMS",
-                "aliyun",
-                "sdk"
-            ],
-            "time": "2018-06-12 05:14:51"
+            "time": "2018-06-12 06:15:15"
         }
     ],
     "packages-dev": [],
