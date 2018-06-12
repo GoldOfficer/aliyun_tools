@@ -17,12 +17,14 @@ use Aliyun\Core\Profile\DefaultProfile;
 
 class Sms
 {
-    static $acsClient = null;
+    static    $acsClient = null;
+    protected $config    = [];
     
     public function __construct($config = [])
     {
+        $this->config = $config;
         static::loadConfig();
-        self::getAcsClient($config);
+        $this->getAcsClient($config);
     }
     
     private static function loadConfig()
@@ -30,14 +32,14 @@ class Sms
         Config::load();
     }
     
-    public static function getAcsClient($config = [])
+    public function getAcsClient()
     {
         $product         = "Dysmsapi";
         $domain          = "dysmsapi.aliyuncs.com";
-        $accessKeyId     = $config['AccessKeyId']; // AccessKeyId
-        $accessKeySecret = $config['AccessKeySecret']; // AccessKeySecret
-        $region          = $config['region'];
-        $endPointName    = $config['endPointName'];
+        $accessKeyId     = $this->config['AccessKeyId']; // AccessKeyId
+        $accessKeySecret = $this->config['AccessKeySecret']; // AccessKeySecret
+        $region          = $this->config['region'];
+        $endPointName    = $this->config['endPointName'];
         
         if (static::$acsClient == null) {
             $profile = DefaultProfile::getProfile($region, $accessKeyId, $accessKeySecret);
@@ -73,7 +75,7 @@ class Sms
         $request->setOutId($outId);
         $request->setSmsUpExtendCode($smsUpExtendCode);
         
-        $acsResponse = static::getAcsClient()->getAcsResponse($request);
+        $acsResponse = $this->getAcsClient()->getAcsResponse($request);
         
         return $acsResponse;
     }
@@ -115,7 +117,7 @@ class Sms
             $request->setSmsUpExtendCodeJson(json_encode($smsUpExtendCode, JSON_UNESCAPED_UNICODE));
         }
         
-        $acsResponse = static::getAcsClient()->getAcsResponse($request);
+        $acsResponse = $this->getAcsClient()->getAcsResponse($request);
         
         return $acsResponse;
     }
@@ -139,7 +141,7 @@ class Sms
         $request->setCurrentPage($currentPage);
         $request->setBizId($bizId);
         
-        $acsResponse = static::getAcsClient()->getAcsResponse($request);
+        $acsResponse = $this->getAcsClient()->getAcsResponse($request);
         
         return $acsResponse;
     }
